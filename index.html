@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+        
+        <style>
+        	* {
+        		box-sizing:border-box;
+        	}
+        	#profile_container {
+        		width:270px;
+        		margin:50px auto;
+        		border-radius:5px;
+        		box-shadow:0 0 3px #aaaaaa;
+        		
+        	}
+        	#profile_container header {
+        		margin:10px;
+        		width:100%;
+        		padding-bottom:45px;
+        	}
+        	#profile_container header #image_container {
+        		width:160px;
+        		height:160px;
+        		margin:0 45px;
+        		border:1px solid #aaaaaa;
+        		border-radius:50%;
+        		overflow:hidden;
+        	}
+        </style>
+    </head>
+    <body>
+
+        <div id="profile_container">
+        	<header>
+        		<div id="edit_btn">
+        			<a href="#" id="edit">edit</a>
+        		</div>
+        		<div id="image_container">
+        			<div id="complete_indicator">
+        				<div id="image_mask">
+        					<img src="http://www.lorempixum.com/150/150/people" alt=""/>
+        				</div>
+        			</div>
+        		</div>
+        		<span id="user_name">Dan Cauffman</span>
+        		<span id="user_title">Web Designer</span>
+        	</header>
+        	<div id="menu">
+        		<ul>
+        			<li>
+        				<span class="menu_icn" id="activity_icn"></span>
+        				<a href="#" id="activity">Activity</a>
+        				<span class="menu_indicator">10</span>
+        			</li>
+        			<li>
+        				<span class="menu_icn" id="friends_icn"></span>
+        				<a href="#" id="friends">Friends</a>
+        				<span class="menu_indicator">5</span>
+        			</li>
+        			<li>
+        				<span class="menu_icn" id="groups_icn"></span>
+        				<a href="#" id="groups">Groups</a>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
